@@ -1,0 +1,9 @@
+<form method="POST" action="{% url 'add_edit_product' %}">
+    {% csrf_token %}
+    Code: <br> <input name="code"> <br>
+    Name: <br> <input name="name"> <br>
+    Description: <br> <input name="description"> <br>
+    UnitPrice: <br> <input name="unitPrice"> <br>
+
+    <input type="submit">
+</form>

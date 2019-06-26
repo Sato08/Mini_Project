@@ -1,0 +1,10 @@
+<!-- product.html-->
+<form method="POST" action="{% url 'save_product' %}">
+        {% csrf_token %}
+        <input type="hidden" name="id" value="{{id}}">
+        Code: <br> <input name="code" value="{{code}}"> <br>
+        Name: <br> <input name="name" value="{{name}}"> <br>
+        Unit Price: <br> <input name="unitPrice" value="{{unitPrice}}"><br>
+    
+        <input type="submit">
+</form>
